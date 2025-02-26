@@ -1,21 +1,25 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    char string[100];
+    int i=0;
 
-int main() {
-    int i = 0;
-    char str[100];
-    printf("Enter String:",str);
-    scanf("%s",str);
-    while (str[i] == 'a') {
+    printf("Enter String: ");
+    scanf("%s",&string);
+
+    while(string[i]=='a')
+    {
         i++;
     }
 
-    if (str[i] == 'b' && str[i + 1] == 'b' && str[i + 2] == '\0') {
-        printf("Valid String\n");
+    if(string[i]=='b' && string[i+1]=='b' && string[i+2]=='\0')
+    {
+        printf("Valid String.");
     }
 
-    else{
-        printf("Invalid String\n");
+    else
+    {
+        printf("Invalid String.");
     }
-    printf("\nThis program is created by Utsav Godhani-22ce035");
 }
